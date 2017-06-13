@@ -6,6 +6,10 @@ let About = require('About');
 let Examples = require('Examples');
 import { Route, Router, IndexRoute, hashHistory } from 'react-router';
 
+//load foundation
+require('style!css!foundation-sites/dist/foundation.min.css');
+$(document).foundation();
+
 ReactDOM.render(
   <Router history={hashHistory}>
     <Route path="/" component={Main}>
